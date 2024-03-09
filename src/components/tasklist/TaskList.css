@@ -1,0 +1,12 @@
+.TaskList-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-left: 2rem;
+    background-color:rgb(197, 191, 191);
+}
+
+.TaskList-item:hover {
+    background-color: white;
+}

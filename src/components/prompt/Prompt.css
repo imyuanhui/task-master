@@ -1,0 +1,56 @@
+.prompt {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 300px;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prompt-input {
+    margin-bottom: 20px;
+  }
+  
+  .prompt-input input,
+  .prompt-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "Noto Sans SC", sans-serif;
+  }
+  
+  .prompt-input textarea {
+    resize: none; 
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .prompt button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .prompt button:last-child {
+    margin-right: 0;
+    background-color: #dc3545; 
+  }
+  
+  .prompt button:hover {
+    opacity: 0.8; 
+  }
+  

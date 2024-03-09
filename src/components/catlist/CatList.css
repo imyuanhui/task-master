@@ -1,0 +1,28 @@
+.CatList-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.CatList-item-cat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: rgb(197, 191, 191);
+}
+
+.CatList-item-cat:hover {
+    background-color:  rgb(229, 224, 224);
+}
+
+.white-background {
+    background-color: white;
+}
+
+.grey-background {
+    background-color:  rgb(229, 224, 224);
+}
+
+.cat-item {
+    padding-left: .5rem;
+}

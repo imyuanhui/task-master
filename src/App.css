@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.App header {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding-left: 1rem;
+  font-size: 20px;
+}
+
+.App-main {
+  display: flex;
+  min-height: 95vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+
+.App-main-left,
+.App-main-center {
+  width: 300px;
+  min-width: 300px;
+  overflow: auto;
+  border: 2px grey solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-main-left {
+  background-color: rgb(197, 191, 191);
+  border-right: none;
+}
+
+.App-main-center {
+  background-color: white;
+  border-right: none;
+}
+
+.App-main-right {
+  flex: 1;
+  background-color: white;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 2px grey solid;
+  overflow: auto;
+}
+
+.catlist-header:hover {
+  color: green;
+  cursor: pointer;
+}

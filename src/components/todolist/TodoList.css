@@ -1,0 +1,45 @@
+.TodoList {
+    display: flex;
+    flex-direction: column;
+}
+
+.TodoList-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(197, 191, 191);
+    height: 30px;
+    border-bottom: 2px grey solid;
+}
+
+.TodoList-filter {
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.TodoList-filter:hover {
+    background-color: white;
+}
+
+.TodoList-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.TodoList-item-date {
+    background-color: lightyellow;
+    margin: 0;
+    padding: 0;
+}
+
+.TodoItem:hover {
+    color: green;
+}
+
+.green-text {
+    color: green;
+}
