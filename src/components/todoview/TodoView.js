@@ -51,7 +51,9 @@ const TodoView = ({ selectedTodo, setSelectedTodo, isTodoEditable, setIsTodoEdit
 
     // Function to handle todo removal
     const handleRmvTodo = (id) => {
-        if (window.confirm("确认删除此任务？")) {
+        if (id === 0 || id === 1) {
+            alert("请选择一个任务！")
+        } else if (window.confirm("确认删除此任务？")) {
             removeItem("todos", id, currData, setCurrData);
             setSelectedTodo(-1);
         }
@@ -74,7 +76,7 @@ const TodoView = ({ selectedTodo, setSelectedTodo, isTodoEditable, setIsTodoEdit
         return (
             <>
                 <MdTaskAlt className="TodoView-header-btn" onClick={() => checkTodo()} />
-                <HiOutlinePencilSquare onClick={() => {selectedTodo !== -1 && setIsTodoEditable(true)}} className="TodoView-header-btn" />
+                <HiOutlinePencilSquare onClick={() => {selectedTodo !== -1 && selectedTodo !== 0 && setIsTodoEditable(true)}} className="TodoView-header-btn" />
                 <IoMdTrash onClick={() => handleRmvTodo(selectedTodo)} className="TodoView-header-btn" />
             </>
         );
