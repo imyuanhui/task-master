@@ -51,7 +51,7 @@ const TodoView = ({ selectedTodo, setSelectedTodo, isTodoEditable, setIsTodoEdit
 
     // Function to handle todo removal
     const handleRmvTodo = (id) => {
-        if (id === 0 || id === 1) {
+        if (id === 0 || id === -1) {
             alert("请选择一个任务！")
         } else if (window.confirm("确认删除此任务？")) {
             removeItem("todos", id, currData, setCurrData);
